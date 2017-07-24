@@ -23,7 +23,7 @@
   // For demo purposes we fetch from local file in this plunk
   // In your application this can be a url like https://api.github.com
   //window.__env.apiUrl = '.';
-  window.__env.apiUrl = 'http://localhost:3001';
+  window.__env.apiUrl = 'http://' + `process.env.HOSTNAME` + '/teste';
 
   // Whether or not to enable debug mode
   // Setting this to false will disable console output
